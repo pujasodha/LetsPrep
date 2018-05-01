@@ -20,6 +20,7 @@
   "homepage": "https://github.com/pujasodha/LetsPrep#readme",
   "dependencies": {
     "mysql2": "^1.5.3",
+    "path": "^0.12.7",
     "sequelize": "^4.37.6"
   }
 }
