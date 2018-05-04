@@ -1,1 +1,31 @@
 @import url('./materialize.min.css');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+#tableTopp{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    z-index: 0;
+}
+
+#title {
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    top: 24%;
+    color: seashell;
+    font-size: 260px;
+    text-shadow: -.5px 0 black, 0 .5px black, .5px 0 black, 0 -.5px black;
+}
+
+.modal-trigger{
+    left: 45%;
+    top: 71%;
+    position: absolute;
+    height: 70px;
+    width: 200px;
+    z-index: 1;
+    border-radius: 15px;
+    font-size: 30px;
+    padding-top: 15px;
+    font-weight: bolder;
+}
