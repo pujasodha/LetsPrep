@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
+.footer {
+    height: 100px;
+    color: rgb(252, 238, 229);
+}
+
 #homeSection {
     margin-bottom: 0px;
     height: 906px;
@@ -34,6 +39,7 @@
     z-index: 1;
     border-radius: 15px;
     font-size: 30px;
+    color: rgb(252, 238, 229);
     padding-top: 17px;
     font-weight: bold;
 }
@@ -57,6 +63,71 @@
     width: 800px;
     margin-left: 450px;
 }
+
+.howPics {
+    width: 200px;
+    height: 200px;
+}
+
+.howDivs {
+    margin-bottom: 30px;
+}
+
+.howText {
+    position: absolute;
+    font-size: 40px;
+    color: rgb(252, 238, 229);
+}
+
+#howText1 {
+    top: 1300px;
+    margin-left: 250px;
+}
+
+#howText2 {
+   left: 350px;
+   top: 1525px
+}
+
+#howText3 {
+    margin-left: 50px;
+    top: 1735px;
+}
+
+#howText4 {
+    top: 1780px;
+    margin-left: 210px;
+}
+
+#howText5 {
+    left: 450px;
+    top: 1955px;
+}
+
+#howText6 {
+    left: 600px;
+    top: 2000px;
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+#lastHowDiv {
+    margin-bottom: 120px;
+}
+
+/* Why Section */
+.whySection {
+    top: 1600px;
+    background-color:rgb(252, 238, 229);
+}
+
+#whyTitle {
+    color: black;
+}
+
+  /* User HTML */
 
 /* Calendar */
 .calendarDiv{
@@ -309,4 +380,23 @@
   .add:hover, .create-event:hover, .add-event:hover{
     color:#27e879 !important;
     border-color: #27e879 !important;
+  }
+
+  #profilePic {
+    height: 205px;
+    width: 265px;
+    border: solid black .8px;
+  }
+
+  #userInfoDiv {
+      /* margin-left: 10px; */
+      width: 270px;
+  }
+
+  #userDiv {
+      margin-top: 90px;
+  }
+
+  #userName {
+      font-size: 40px;
   }

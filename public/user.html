@@ -21,7 +21,7 @@
 <body>
     <!-- Nav Bar -->
     <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper blue lighten-3">
             <a href="#!" class="brand-logo">LetsPrep</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
@@ -59,17 +59,21 @@
     </ul>
 
     <!-- Main Section -->
-    <div class="row">
-        <div class="col s2"></div>
+    <div class="row" id="userDiv">
+        <div class="col s1"></div>
         <!-- User Profile Section -->
-        <div class="col s2">
+        <div class="col s3">
             <!-- User Info -->
-            <div></div>
-            <!-- Goals -->
-            <div></div>
+            <div>
+                <img id="profilePic" class="circle responsive img" src="./images/placeholderUserImage.png" alt="">
+                <div id="userInfoDiv" class="center-align">
+                    <p id="userName">John Doe</p>
+                    <p>Goals:</p>
+                </div>
+            </div>
         </div>
         <!-- Calendar Where History of Past meal days will be and add meal -->
-        <div class="col s6 calendarDiv">
+        <div class="col s7 calendarDiv">
 
                 <div class="calendar-base">
 
@@ -167,11 +171,13 @@
                 </div>
                 <!-- calendar-left -->
         </div>
-        <div class="col s2"></div>
+        <div class="col s1"></div>
     </div>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="blue lighten-3 center-align footer">
+        <p> COPYRIGHT &copy 2018 LET'S PREP. ALL RIGHTS RESERVED </p>
+    </footer>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="./js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
