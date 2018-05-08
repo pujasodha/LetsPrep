@@ -19,7 +19,7 @@
     <title>LetsPrep</title>
 </head>
 
-<body>
+<body id="landingBody">
     <!-- Nav Bar -->
     <nav>
         <div class="nav-wrapper blue lighten-3">
@@ -105,13 +105,22 @@
             </form>
         </div>
         <!-- Side Div -->
-        <div class="col s4" id="resultsDiv"></div>
+        <div class="col s4" id="resultsDiv">
+            <div id="recipeDiv">
+                <h3 id="recipeName">Name</h3>
+                <hr>
+                <img id="recipesPic" src="#">
+                <p class="recipeText">Calories: <span id="caloriesNumber"></span></p>
+                <p class="recipeText">Ingredients: </p>
+                <div id="ingredients"></div>
+            </div>
+        </div>
         <div class="col s2"></div>
     </div>
 
     <!-- Footer -->
     <footer class="blue lighten-3 center-align footer">
-        <p> COPYRIGHT &copy 2018 LET'S PREP. ALL RIGHTS RESERVED </p>
+        <p id="copyright"> COPYRIGHT &copy 2018 LET'S PREP. ALL RIGHTS RESERVED </p>
     </footer>
 
     <!--JavaScript at end of body for optimized loading-->
@@ -125,4 +134,10 @@
 List of history - Calendar w/jquery UI kit 
 about
 goals
+return call outline
+
+name of food
+img
+cal
+ingredientLines
 -->
