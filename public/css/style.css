@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
+.footer {
+    height: 100px;
+    color: rgb(252, 238, 229);
+    bottom: 0%;
+}
+
 #homeSection {
     margin-bottom: 0px;
     height: 906px;
@@ -34,6 +40,7 @@
     z-index: 1;
     border-radius: 15px;
     font-size: 30px;
+    color: rgb(252, 238, 229);
     padding-top: 17px;
     font-weight: bold;
 }
@@ -58,10 +65,77 @@
     margin-left: 450px;
 }
 
+.howPics {
+    width: 200px;
+    height: 200px;
+}
+
+.howDivs {
+    margin-bottom: 30px;
+}
+
+.howText {
+    position: absolute;
+    font-size: 40px;
+    color: rgb(252, 238, 229);
+}
+
+#howText1 {
+    top: 1300px;
+    margin-left: 250px;
+}
+
+#howText2 {
+   left: 350px;
+   top: 1525px
+}
+
+#howText3 {
+    margin-left: 50px;
+    top: 1735px;
+}
+
+#howText4 {
+    top: 1780px;
+    margin-left: 210px;
+}
+
+#howText5 {
+    left: 450px;
+    top: 1955px;
+}
+
+#howText6 {
+    left: 600px;
+    top: 2000px;
+}
+
+.row {
+    margin-bottom: 0px;
+}
+
+#lastHowDiv {
+    margin-bottom: 120px;
+}
+
+/* Why Section */
+.whySection {
+    top: 1600px;
+    background-color:rgb(252, 238, 229);
+}
+
+#whyTitle {
+    color: black;
+}
+
+/* User HTML */
+
 /* Calendar */
 .calendarDiv{
     width: 50%; 
     font-family: 'Kanit', sans-serif;
+    height: 500px;
+    margin-bottom: 100px;
 }
 
 .calendar-base {
@@ -108,17 +182,17 @@
     top: 36px;
   }
   .triangle-left:hover{
-    border-right: 10px solid#2ECC71;
+    border-right: 10px solid#64b5f6;
   }
   .triangle-right:hover{
-    border-left: 10px solid#2ECC71;
+    border-left: 10px solid#64b5f6;
   }
   
   .month-color {
-    color: #27AE60;
+    color: #64b5f6;
   }
   .month-hover:hover{
-    color:#27e879 !important;
+    color:#64b5f6 !important;
   }
   
   .months {
@@ -189,7 +263,7 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #2ECC71;
+    background-color: #64b5f6;
     position: relative;
     top: 295px;
     left: 661px;
@@ -203,7 +277,7 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: #2980B9;
+    background-color: #64b5f6;
     position: relative;
     top: 304px;
     left: 695px;
@@ -223,7 +297,7 @@
     width: 300px;
     height: 500px;
     border-radius: 20px 0px 0px 20px;
-    background-color: #2ECC71;
+    background-color: #64b5f6;
     position: relative;
     z-index: -1;
     bottom: 500px;
@@ -237,7 +311,7 @@
   }
   
   .burger-line:hover, .hamburger:hover{
-    background-color:#27e879 !important;
+    background-color:#64b5f6 !important;
   }
   
   .burger-line {
@@ -307,6 +381,42 @@
   }
   
   .add:hover, .create-event:hover, .add-event:hover{
-    color:#27e879 !important;
-    border-color: #27e879 !important;
+    color:#64b5f6 !important;
+    border-color: #64b5f6 !important;
+  }
+
+  #profilePic {
+    height: 205px;
+    width: 265px;
+    border: solid black .8px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+  }
+
+  #userInfoDiv {
+      /* margin-left: 10px; */
+      width: 270px;
+  }
+
+  #userRow {
+      margin-top: 90px;
+  }
+
+  #userName {
+      font-size: 40px;
+  }
+
+  #userDiv {
+    background-color: #64b5f6;
+    color: rgb(252, 238, 229);
+    height: 500px;
+    border-radius: 20px;
+    margin-right: 50px;
+  }
+
+  /* Landing Page */
+
+  #resultsDiv {
+      width: 700px;
+      height: 600px;
   }

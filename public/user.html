@@ -21,7 +21,7 @@
 <body>
     <!-- Nav Bar -->
     <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper blue lighten-3">
             <a href="#!" class="brand-logo">LetsPrep</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
@@ -59,21 +59,25 @@
     </ul>
 
     <!-- Main Section -->
-    <div class="row">
-        <div class="col s2"></div>
+    <div class="row" id="userRow">
+        <div class="col s1"></div>
         <!-- User Profile Section -->
-        <div class="col s2">
+        <div class="col s3">
             <!-- User Info -->
-            <div></div>
-            <!-- Goals -->
-            <div></div>
+            <div id="userDiv" class="center-align">
+                <img id="profilePic" class="circle responsive img" src="./images/placeholderUserImage.png" alt="">
+                <div id="userInfoDiv" class="center-align">
+                    <p id="userName">John Doe</p>
+                    <p>Goals:</p>
+                </div>
+            </div>
         </div>
         <!-- Calendar Where History of Past meal days will be and add meal -->
-        <div class="col s6 calendarDiv">
+        <div class="col s7 calendarDiv">
 
                 <div class="calendar-base">
 
-                    <div class="year">2017</div>
+                    <div class="year">2018</div>
                     <!-- year -->
 
                     <div class="triangle-left"></div>
@@ -85,8 +89,8 @@
                         <span class="month-hover">Jan</span>
                         <span class="month-hover">Feb</span>
                         <span class="month-hover">Mar</span>
-                        <strong class="month-color">Apr</strong>
-                        <span class="month-hover">May</span>
+                        <span class="month-hover">Apr</span>
+                        <span class="month-color">May</span>
                         <span class="month-hover">Jun</span>
                         <span class="month-hover">July</span>
                         <span class="month-hover">Aug</span>
@@ -147,31 +151,22 @@
                     <!--num-date -->
                     <div class="day">THURSDAY</div>
                     <!--day -->
-                    <div class="current-events">Current Events
+                    <div class="current-events">Total Calories:
                         <br/>
                         <ul>
-                            <li>Day 09 Daily CSS Image</li>
+                            <li>Meals:</li>
                         </ul>
-                        <span class="posts">See post events</span>
                     </div>
-                    <!--current-events -->
-
-                    <div class="create-event">Create an Event</div>
-                    <!-- create-event -->
-                    <hr class="event-line" />
-                    <div class="add-event">
-                        <span class="add">+</span>
-                    </div>
-                    <!-- add-event -->
-
                 </div>
                 <!-- calendar-left -->
         </div>
-        <div class="col s2"></div>
+        <div class="col s1"></div>
     </div>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="blue lighten-3 center-align footer">
+        <p> COPYRIGHT &copy 2018 LET'S PREP. ALL RIGHTS RESERVED </p>
+    </footer>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="./js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
