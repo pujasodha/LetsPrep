@@ -116,9 +116,8 @@ module.exports = function (app) {
         request("https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&calories=0-"+ calories, function(error, response, body){
             
         console.log(queryURL)
-        // console.log(response)
-        res.send(response)
-            
+        console.log(response.body)
+        res.json(response.body)
         })
     })
 }
