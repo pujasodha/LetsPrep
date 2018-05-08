@@ -15,7 +15,7 @@ var calories = $('').val()
     url: '/api/edamam',
     method: "POST",
     data: {
-       calories: '129' 
+       calories: calories 
     }
 })
 .then(function (response) {
