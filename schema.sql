@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS Letsprep_db;
+DROP DATABASE IF EXISTS letsprep_db;
 
-CREATE DATABASE Letsprep_db;
+CREATE DATABASE letsprep_db;
