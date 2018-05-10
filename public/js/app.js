@@ -2,6 +2,9 @@
 
 $(document).ready(function () {
     M.AutoInit();
+    var user_input = $('#calorieInput').val()
+    var calories = Math.floor(user_input / 3)
+
     $('#userBtn').on('click', function () {
 
         var user = $("#name").val();
@@ -14,7 +17,7 @@ $(document).ready(function () {
         var lunch = "N/A"
         var dinner = "N/A"
 
-        var calories = user_input
+        var calories = Math.floor(user_input / 3)
 
         console.log(user)
         console.log(email)
@@ -29,20 +32,20 @@ $(document).ready(function () {
             data: {
                 user: user,
                 email: email,
-                calories: calories,
+                calories: user_input,
                 breakfast: breakfast,
                 lunch: lunch,
                 dinner: dinner,
                 createdAt: {
                     type: 'TIMESTAMP',
                     allowNull: false
-                  },
-                  updatedAt: {
+                },
+                updatedAt: {
                     type: 'TIMESTAMP',
                     allowNull: false
-                  }
-                } 
-                }).then(function () {
+                }
+            }
+        }).then(function () {
             // console.log(response)
             //         var hits = JSON.parse(response.hits);
 
@@ -67,33 +70,44 @@ $(document).ready(function () {
         //  ======================= API and AJAX Calls =========================== //
         $('#btn1').on('click', function () {
             console.log('hello')
-            var user_input = $('#calorieInput').val()
-            console.log(user_input)
+            // var user_input = $('#calorieInput').val()
+            console.log(calories)
             $.ajax({
                 url: '/api/edamam',
                 method: "POST",
                 data: {
-                    calories: user_input
+                    calories: calories
                 }
             })
                 .then(function (response) {
-                    console.log(response)
-                    var hits = response.hits;
+                    console.log(JSON.parse(response))
+                    var res = JSON.parse(response)
 
 
 
                     var recipe1 = Math.floor(Math.random() * 10);
                     var recipe2 = Math.floor(Math.random() * 10);
+                    var recipe3 = Math.floor(Math.random() * 10);
+                    console.log(recipe1)
+                    console.log(res.hits[recipe1])
 
                     if (recipe1 === recipe2) {
                         var recipe2 = Math.floor(Math.random() * 10)
 
                     }
+                    if (recipe2 === recipe3) {
+                        var recipe2 = Math.floor(Math.random() * 10)
 
-                    console.log(recipe1)
-                    console.log(recipe2)
+                    }
+                    if (recipe3 === recipe1) {
+                        var recipe3 = Math.floor(Math.random() * 10)
 
-                    console.log(hits)
+                    }
+
+                    // console.log(recipe1)
+                    // console.log(recipe2)
+
+                    // console.log(hits)
 
                     // var meal = hits[recipe1].recipe
                     // var meal_img = "<img src='"+hits[recipe1].recipe.image+"'>"
@@ -102,96 +116,45 @@ $(document).ready(function () {
                     var card1 = `
                     <div class="col s4" id="resultsDiv">
                               <div class="row" id="recipeDiv">
-                                  <h3 id="recipeName">`+ hits[recipe1].recipe.label + `</h3>
-                                  <img src="` + hits[recipe1].recipe.image + `">
-                                  <a href="`+ hits[recipe1].recipe.url + `" target="_blank"><br>Want the Recipe? Click Here!</br></a></a>
-                                  <p>Calories: <span id="caloriesNumber">`+ hits[recipe1].recipe.calories + `</span></p>
-                                  <div id="ingredients">`+ hits[recipe1].recipe.ingredientLines + `</div>
+                                  <h3 id="recipeName">`+ res.hits[recipe1].recipe.label + `</h3>
+                                  <img src="` + res.hits[recipe1].recipe.image + `">
+                                  <a href="`+ res.hits[recipe1].recipe.url + `" target="_blank"><br>Want the Recipe? Click Here!</br></a></a>
+                                  <p>Calories: <span id="caloriesNumber">`+ res.hits[recipe1].recipe.calories + `</span></p>
+                                  <div id="ingredients">`+ res.hits[recipe1].recipe.ingredientLines + `</div>
                               </div>
                           </div>
                           `
-                  
-                        var card2 = `
+                    console.log(card1)
+                    var card2 = `
                     <div class="col s4" id="resultsDiv">
                               <div class="row" id="recipeDiv">
-                                  <h3 id="recipeName">`+ hits[recipe2].recipe.label + `</h3>
-                                  <img src="` + hits[recipe2].recipe.image + `">
-                                  <a href="`+ hits[recipe2].recipe.url + `" target="_blank"><br>Want the Recipe? Click Here!</br></a>
-                                  <p>Calories: <span id="caloriesNumber">`+ hits[recipe2].recipe.calories + `</span></p>
-                                  <div id="ingredients">`+ hits[recipe2].recipe.ingredientLines + `</div>
+                                  <h3 id="recipeName">`+ res.hits[recipe2].recipe.label + `</h3>
+                                  <img src="` + res.hits[recipe2].recipe.image + `">
+                                  <a href="`+ res.hits[recipe2].recipe.url + `" target="_blank"><br>Want the Recipe? Click Here!</br></a>
+                                  <p>Calories: <span id="caloriesNumber">`+ res.hits[recipe2].recipe.calories + `</span></p>
+                                  <div id="ingredients">`+ res.hits[recipe2].recipe.ingredientLines + `</div>
                               </div>
                           </div>`
-                        $('#meal_1').html(card1)
+                    console.log(card2)
+                    var card3 = `
+                    <div class="col s4" id="resultsDiv">
+                              <div class="row" id="recipeDiv">
+                                  <h3 id="recipeName">`+ res.hits[recipe3].recipe.label + `</h3>
+                                  <img src="` + res.hits[recipe3].recipe.image + `">
+                                  <a href="`+ res.hits[recipe3].recipe.url + `" target="_blank"><br>Want the Recipe? Click Here!</br></a>
+                                  <p>Calories: <span id="caloriesNumber">`+ res.hits[recipe3].recipe.calories + `</span></p>
+                                  <div id="ingredients">`+ res.hits[recipe3].recipe.ingredientLines + `</div>
+                              </div>
+                          </div>`
+                    console.log(card3)
+
+                        $('#meal_1').append(card1)
                         $('#meal_2').append(card2)
+                        $('#meal_3').append(card3)
                 })
         })
     })
 })
-
-// $("#btn1").on("click", function () {
-//     // var total_calories =  userInput.val()
-//     var calories = $('#calorieInput').val()
-//     console.log(calories)
-
-    
-//     // var meals = {ajax_call }
-
-//     var queryURL = "https://api.edamam.com/search?q=&app_id=b70eca75&app_key=511c6bd4799b355c07c028fcdf6d7fea&calories="+calories
-
-//     $.ajax({
-//       url: queryURL,
-//       method: "GET",
-
-//     }).then(function (response) {
-//       console.log(response)
-
-//       var hits = response.hits;
-
-
-//       var recipe1 = Math.floor(Math.random() * 10);
-//       var recipe2 = Math.floor(Math.random() * 10);
-
-//       if (recipe1 === recipe2) {
-//         var recipe2 = Math.floor(Math.random() * 10)
-
-//       }
-
-//       console.log(recipe1)
-//       console.log(recipe2)
-
-
-//       // var meal = hits[recipe1].recipe
-//       // var meal_img = "<img src='"+hits[recipe1].recipe.image+"'>"
-//       // $("#here1").append(meal_img)
-//       // console.log(meal.image)
-
-//       var card1 = `
-//   <div class="col s4" id="resultsDiv">
-//             <div class="row" id="recipeDiv">
-//                 <h3 id="recipeName">`+ hits[recipe1].recipe.label + `</h3>
-//                 <img src="` + hits[recipe1].recipe.image + `">
-//                 <a href="`+ hits[recipe1].recipe.url + `" target="_blank"><br>Want the Recipe? Click Here!</br></a></a>
-//                 <p>Calories: <span id="caloriesNumber">`+ hits[recipe1].recipe.calories + `</span></p>
-//                 <div id="ingredients">`+ hits[recipe1].recipe.ingredientLines + `</div>
-//             </div>
-//         </div>
-//         `
-
-//       var card2 = `
-//   <div class="col s4" id="resultsDiv">
-//             <div class="row" id="recipeDiv">
-//                 <h3 id="recipeName">`+ hits[recipe2].recipe.label + `</h3>
-//                 <img src="` + hits[recipe2].recipe.image + `">
-//                 <a href="`+ hits[recipe2].recipe.url + `" target="_blank"><br>Want the Recipe? Click Here!</br></a>
-//                 <p>Calories: <span id="caloriesNumber">`+ hits[recipe2].recipe.calories + `</span></p>
-//                 <div id="ingredients">`+ hits[recipe2].recipe.ingredientLines + `</div>
-//             </div>
-//         </div>`
-//       $('#here1').html(card1)
-//       $('#here1').append(card2)
-
-//     })
-
 
 
 

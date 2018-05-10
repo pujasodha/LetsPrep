@@ -1,146 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import style.css-->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- Import Materialize Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="./js/app.js"></script> -->
-    <title>LetsPrep</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import style.css-->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Import Materialize Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script src="./js/app.js"></script> -->
+  <title>LetsPrep</title>
 </head>
-
 <body id="landingBody">
-    <img class="bg" src="./images/landingPic.jpg">
-    <!-- Nav Bar -->
-    <nav>
-        <div class="nav-wrapper blue lighten-2">
-            <a href="#!" class="brand-logo">LetsPrep</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-                <li>
-                    <a href="collapsible.html">Profile</a>
-                </li>
-                <li>
-                    <a href="sass.html">About</a>
-                </li>
-                <li>
-                    <a href="collapsible.html">FAQ</a>
-                </li>
-                <li>
-                    <a href="mobile.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <ul class="sidenav" id="mobile-demo">
+  <img class="bg" src="./images/landingPic.jpg">
+  <!-- Nav Bar -->
+  <nav>
+    <div class="nav-wrapper blue lighten-2">
+      <a href="#!" class="brand-logo">LetsPrep</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
         <li>
-            <a href="mobile.html">Profile</a>
+          <a href="collapsible.html">Profile</a>
         </li>
         <li>
-            <a href="sass.html">About</a>
+          <a href="sass.html">About</a>
         </li>
         <li>
-            <a href="badges.html">FAQ</a>
+          <a href="collapsible.html">FAQ</a>
         </li>
         <li>
-            <a href="mobile.html">Contact</a>
+          <a href="mobile.html">Contact</a>
         </li>
-    </ul>
-    <!-- Main Section -->
-    <div class="row">
-        <div class="col s2"></div>
-        <!--Main Area -->
-        <div class="col s4">
-            <h1 id="landingTitle">Plan Your Meals</h1>
-            <!-- Form to enter your calories goal -->
-            <form>
-                <div class="input-field">
-                    <input placeholder="John Smith" id="name" type="text" class="validate">
-                    <label for="name">Name</label>
-                </div>
-                <div class="input-field">
-                    <input placeholder="Email" id="email" type="text" class="validate">
-                    <label for="email">Email</label>
-                </div>
-                <div class="input-field">
-                    <input placeholder="Enter Number" id="calorieInput" type="text" class="validate">
-                    <label for="calorieInput">Calorie Input</label>
-                </div>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a href="mobile.html">Profile</a>
+    </li>
+    <li>
+      <a href="sass.html">About</a>
+    </li>
+    <li>
+      <a href="badges.html">FAQ</a>
+    </li>
+    <li>
+      <a href="mobile.html">Contact</a>
+    </li>
+  </ul>
+  <!-- Main Section -->
+  <div class="row">
+    <div class="col s2"></div>
+    <!--Main Area -->
+    <div class="col s4">
+      <h1 id="landingTitle">Plan Your Meals</h1>
+      <!-- Form to enter your calories goal -->
+      <form>
+              <div class="input-field">
+                <input placeholder="John Smith" id="name" type="text" class="validate">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input placeholder="Email" id="email" type="text" class="validate">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input placeholder="Enter Number" id="calorieInput" type="text" class="validate">
+                <label for="calorieInput">Calorie Input</label>
+              </div>
             </form>
             <div class="modal-footer">
-                <button id="userBtn" class="modal-close waves-effect waves-teal btn-flat">Submit My Info First!</button>
-                <button id="btn1" class="modal-close waves-effect waves-teal btn-flat">Find Recipes!</button>
+              <button id="userBtn"class="modal-close waves-effect waves-teal btn-flat">Submit My Info First!</button>
+              <button id="btn1"class="modal-close waves-effect waves-teal btn-flat">Find Recipes!</button>
 
             </div>
-            <!-- Form to select your meals -->
-            <div class="landingForm">
-                <div id="meal_1" class="input-field col s12">
-                    <!-- <select>
+      <!-- Form to select your meals -->
+      <div class="landingForm">
+        <div id= "meal_1"class="input-field col s12">
+          <!-- <select>
             <option value="" disabled selected>Choose your breakfast</option>
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>
           </select> -->
-                    <label>Meal 1</label>
-                </div>
-                <div id="meal_2" class="input-field col s12">
-                    <!-- <select>
+          <label>Meal 1</label>
+        </div>
+        <div id= "meal_2"class="input-field col s12">
+          <!-- <select>
             <option value="" disabled selected>Choose your lunch</option>
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>
           </select> -->
-                    <label>Meal 2</label>
-                </div>
-                <div id="meal_3" class="input-field col s12">
-                    <!-- <select>
+          <label>Meal 2</label>
+        </div>
+        <div id= "meal_3"class="input-field col s12">
+          <!-- <select>
             <option value="" disabled selected>Choose your dinner</option>
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>
           </select> -->
-                    <label>Meal 3</label>
-                </div>
-                <div class="right-align">
-                    <a id="add_something" class="btn-floating btn-large waves-effect waves-light red">
-                        <i class="material-icons">add</i>
-                    </a>
-                </div>
-            </div>
+          <label>Meal 3</label>
         </div>
-        <!-- Side Div -->
-        <div class="col s4" id="resultsDiv">
-            <div id="recipeDiv">
-                <h3 id="recipeName">Name</h3>
-                <hr>
-                <img id="recipesPic" src="#">
-                <p class="recipeText">Calories:
-                    <span id="caloriesNumber"></span>
-                </p>
-                <p class="recipeText">Ingredients: </p>
-                <div id="ingredients"></div>
-            </div>
+        <div class="right-align">
+          <a id="add_something"class="btn-floating btn-large waves-effect waves-light red">
+            <i class="material-icons">add</i>
+          </a>
         </div>
-        <div class="col s2"></div>
+      </div>
     </div>
-    <!-- Footer -->
-    <footer class="blue lighten-2 center-align footer">
-        <p id="copyright"> COPYRIGHT &copy 2018 LET'S PREP. ALL RIGHTS RESERVED </p>
-    </footer>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="./js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="./js/app.js"></script>
-    <!-- <script src="./js/user.js"></script> -->
+    <!-- Side Div -->
+    <div class="col s4" id="resultsDiv">
+      <div id="recipeDiv">
+        <h3 id="recipeName">Name</h3>
+        <hr>
+        <img id="recipesPic" src="#">
+        <p class="recipeText">Calories: <span id="caloriesNumber"></span></p>
+        <p class="recipeText">Ingredients: </p>
+        <div id="ingredients"></div>
+      </div>
+    </div>
+    <div class="col s2"></div>
+  </div>
+  <!-- Footer -->
+  <footer class="blue lighten-2 center-align footer">
+    <p id="copyright"> COPYRIGHT &copy 2018 LET'S PREP. ALL RIGHTS RESERVED </p>
+  </footer>
+  <!--JavaScript at end of body for optimized loading-->
+  <script type="text/javascript" src="./js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
+  <!-- <script src="./js/user.js"></script> -->
 </body>
-
 </html>
 <!-- Page where user's activity is 
 List of history - Calendar w/jquery UI kit 

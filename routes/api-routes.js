@@ -119,19 +119,19 @@ module.exports = function (app) {
     app.post('/api/edamam', function(req, res){
         console.log('edamam starting')
         // var calories = {calories: req.body.calories}
-       var calorieAPI = db.UserData.findOne({
-            where: {
-                calories: req.body.calories,
-            },
-        })
+    //    var calorieAPI = db.UserData.findOne({
+    //         where: {
+    //             calories: req.body.calories,
+    //         },
+    //     })
 
-
-        var queryURL = "https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&calories=0-"+calorieAPI 
+        var calories = req.body.calories
+        var queryURL = "https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&calories=0-"+calories
         
         request("https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&calories=0-"+ calories, function(error, response, body){
-            
-        console.log(response)
+        //     console.log(queryURL)
         // console.log(response.body)
+        // console.log(body)
         res.json(response.body)
         })
     })
