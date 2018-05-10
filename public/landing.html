@@ -16,74 +16,46 @@
   <title>LetsPrep</title>
 </head>
 <body id="landingBody">
-  <img class="bg" src="./images/landingPic.jpg">
-  <!-- Nav Bar -->
-  <nav>
-    <div class="nav-wrapper blue lighten-2">
-      <a href="#!" class="brand-logo">LetsPrep</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-        <i class="material-icons">menu</i>
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="collapsible.html">Profile</a>
-        </li>
-        <li>
-          <a href="sass.html">About</a>
-        </li>
-        <li>
-          <a href="collapsible.html">FAQ</a>
-        </li>
-        <li>
-          <a href="mobile.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <ul class="sidenav" id="mobile-demo">
-    <li>
-      <a href="mobile.html">Profile</a>
-    </li>
-    <li>
-      <a href="sass.html">About</a>
-    </li>
-    <li>
-      <a href="badges.html">FAQ</a>
-    </li>
-    <li>
-      <a href="mobile.html">Contact</a>
-    </li>
+    <img class="bg" src="./images/landingPic.jpg">
+    <!-- Hamburger -->
+    <i class="medium material-icons right-align navHamburger dropdown-trigger" data-target="dropdown1">dehaze</i>
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#homeSection">Home</a></li>
+    <li><a href="#howSection">Profile</a></li>
+    <li><a href="#whySection">Plan a Meal</a></li>
   </ul>
-  <!-- Main Section -->
-  <div class="row">
-    <div class="col s2"></div>
-    <!--Main Area -->
-    <div class="col s4">
-      <h1 id="landingTitle">Plan Your Meals</h1>
-      <!-- Form to enter your calories goal -->
-      <form>
-              <div class="input-field">
-                <input placeholder="John Smith" id="name" type="text" class="validate">
-                <label for="name">Name</label>
-              </div>
-              <div class="input-field">
-                <input placeholder="Email" id="email" type="text" class="validate">
-                <label for="email">Email</label>
-              </div>
-              <div class="input-field">
-                <input placeholder="Enter Number" id="calorieInput" type="text" class="validate">
-                <label for="calorieInput">Calorie Input</label>
-              </div>
-            </form>
-            <div class="modal-footer">
-              <button id="userBtn"class="modal-close waves-effect waves-teal btn-flat">Submit My Info First!</button>
-              <button id="btn1"class="modal-close waves-effect waves-teal btn-flat">Find Recipes!</button>
 
-            </div>
-      <!-- Form to select your meals -->
-      <div class="landingForm">
-        <div id= "meal_1"class="input-field col s12">
-          <!-- <select>
+    <!-- Main Section -->
+    <div class="row">
+        <div class="col s2"></div>
+        <!--Main Area -->
+        <div class="col s4">
+            <h1 id="landingTitle">Plan Your Meals</h1>
+            <!-- Form to enter your calories goal -->
+            <form class="landingForm">
+                <div class="input-field">
+                    <input placeholder="John Smith" id="name" type="text" class="validate">
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-field">
+                    <input placeholder="Email" id="email" type="text" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <input placeholder="Enter Number" id="calorieInput" type="text" class="validate">
+                    <label for="calorieInput">Calorie Input</label>
+                </div>
+                <div class="modal-footer">
+                        <button id="userBtn" class="modal-close waves-effect waves-teal btn-flat">Submit My Info First!</button>
+                        <button id="btn1" class="modal-close waves-effect waves-teal btn-flat">Find Recipes!</button>
+                    </div>
+            </form>
+
+            <!-- Form to select your meals -->
+            <div class="landingForm">
+                <div id="meal_1" class="input-field col s12">
+                    <!-- <select>
             <option value="" disabled selected>Choose your breakfast</option>
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>
@@ -104,7 +76,18 @@
             <option value="1">Option 1</option>
             <option value="2">Option 2</option>
           </select> -->
+<<<<<<< HEAD
           <label>Meal 3</label>
+=======
+                    <label>Meal 3</label>
+                </div>
+                <!-- <div class="right-align"> -->
+                    <!-- <a id="add_something" class="btn-floating btn-large waves-effect waves-light red">
+                        <i class="material-icons">add</i>
+                    </a> -->
+                <!-- </div> -->
+            </div>
+>>>>>>> 7973b37e73370b8399eb6f87760c29ad3408e15f
         </div>
         <div class="right-align">
           <a id="add_something"class="btn-floating btn-large waves-effect waves-light red">
