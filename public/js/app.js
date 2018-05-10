@@ -2,10 +2,9 @@
 
 $(document).ready(function () {
     M.AutoInit();
-    $('.dropdown-trigger').dropdown();
-    $('.scrollspy').scrollSpy({
-        scrollOffset: 100,
-      });
+    var user_input = $('#calorieInput').val()
+    var calories = Math.floor(user_input / 3)
+
     $('#userBtn').on('click', function () {
 
         var user = $("#name").val();
@@ -156,26 +155,3 @@ $(document).ready(function () {
         })
     })
 })
-
-
-
-
-
-
-    //     for(var i = 0; i < 2;i++){
-
-
-
-    //         // var num = Math.floor(Math.random()*10)
-    //         // console.log(typeof(num))
-    //         // // $("").html(response.hit[num])
-    //         // console.log(response);}
-    //    } 
-
-//   })
-    // event.preventDefault()
-
-    // $('.sidenav').sidenav();
-    // $('.modal').modal();
-
-    // $('select').material_select();
