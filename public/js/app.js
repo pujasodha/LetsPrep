@@ -5,8 +5,8 @@ $(document).ready(function () {
     var user_input = $('#calorieInput').val()
     var calories = Math.floor(user_input / 3)
 
-    $('#userBtn').on('click', function () {
-
+    $('#userBtn').on('click', function (event) {
+        event.preventDefault();
         var user = $("#name").val();
 
         var email = $("#email").val();
@@ -68,7 +68,8 @@ $(document).ready(function () {
 
 
         //  ======================= API and AJAX Calls =========================== //
-        $('#btn1').on('click', function () {
+        $('#btn1').on('click', function (event) {
+            event.preventDefault()
             console.log('hello')
             // var user_input = $('#calorieInput').val()
             console.log(calories)
