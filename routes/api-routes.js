@@ -1,24 +1,33 @@
+// var user_model = require('../public/js/app.js');
 var db = require('../models')
 var request = require('request')
+var bodyParser = require('body-parser')
 var app_id = require('../config/config.js').app_id
 var app_key = require('../config/config.js').app_key
+
+
 
 module.exports = function (app) {
 //all user post, get, update, delete
 
     //POST route for inputting new user info
     app.post('/api/user', function (req, res) {
-        db.User.create({
-            where: {
-                user: req.params.user,
-                email: req.params.email,
-                calories: req.params.calories
-            }
+        console.log('post starts')
+        db.UserData.create({
+            user: req.body.user,
+            email: req.body.email,
+            calories: req.body.calories,
+            breakfast: req.body.breakfast,
+            lunch: req.body.lunch,
+            dinner: req.body.dinner,
+            createdAt: req.params.createdAt,
+            updatedAt: req.params.updatedAt,
         }).then(function (dbUser) {
+           
             res.send(dbUser)
         })
     })
-    //GET route for getting the users information
+    // GET route for getting the users information
     app.get('/api/user', function (req, res) {
         db.User.findAll({
             where: {
@@ -108,14 +117,20 @@ module.exports = function (app) {
     // ========================== API & AJAX FOR EDAMAM ==================================== //
     
     app.post('/api/edamam', function(req, res){
-        console.log(req.body.calories)
-        var calories = req.body.calories
-        
-        var queryURL = "https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&calories=0-" + calories 
+        console.log('edamam starting')
+        // var calories = {calories: req.body.calories}
+       var calorieAPI = db.UserData.findOne({
+            where: {
+                calories: req.body.calories,
+            },
+        })
+
+
+        var queryURL = "https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&calories=0-"+calorieAPI 
         
         request("https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&calories=0-"+ calories, function(error, response, body){
             
-        console.log(queryURL)
+        console.log(response)
         // console.log(response.body)
         res.json(response.body)
         })
