@@ -9,6 +9,11 @@
     margin-top: 120px;
 }
 
+#copyright {
+  font-weight: bold;
+  padding-top: 35px;
+}
+
 #homeSection {
     margin-bottom: 0px;
     height: 906px;
@@ -63,7 +68,7 @@
 
 #howTitle {
     width: 800px;
-    margin-left: 450px;
+    margin-top: 110px;
 }
 
 .howPics {
@@ -82,13 +87,13 @@
 }
 
 #howText1 {
-    top: 1300px;
+    top: 1290px;
     margin-left: 250px;
 }
 
 #howText2 {
    left: 350px;
-   top: 1525px
+   top: 1515px
 }
 
 #howText3 {
@@ -127,6 +132,9 @@
 
 #whyTitle {
     color: black;
+    border-bottom: solid 7px black;
+    width: 800px;
+    margin-top: 110px;
 }
 
 /* User HTML */
@@ -266,8 +274,8 @@
     border-radius: 50%;
     background-color: #64b5f6;
     position: relative;
-    top: 295px;
-    left: 661px;
+    top: 145px;
+    left: 801px;
   }
   
   .white {
@@ -410,7 +418,7 @@
     margin-right: 50px;
   }
 
-  #mealPrep {
+  .bg {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -419,7 +427,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: scroll;
-    height: 100%;
+    height: 110%;
     background-position: center;
     opacity: .8;
   }
@@ -431,18 +439,32 @@
 
   /* Landing Page */
 
+ #landingTitle {
+   font-family: 'Amatic SC', cursive;
+   font-size: 100px;
+   font-weight: bolder;
+   background-color: white;
+   width: 534px;
+   padding-left: 48px;
+   padding-right: 10px;
+ }
+
   #resultsDiv {
       width: 700px;
-      height: 600px;
+      height: 500px;
+      margin-top: 180px;
+  }
+
+  .landingForm {
+    background-color: white;
+    padding: 25px;
   }
 
   #recipeDiv {
     margin-left: 60px;
-    margin-top: 90px;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-bottom: 70px;
-    border: solid .1px black;
+    padding: 70px;
+    padding-top: 20px;
+    background-color: white;
   }
 
   #reciepesPic {
@@ -455,3 +477,4 @@
  .recipeText {
     font-weight: bold;
   }
+  
