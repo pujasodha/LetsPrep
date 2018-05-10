@@ -9,20 +9,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import style.css-->
     <link rel="stylesheet" href="./css/style.css">
-
     <!-- Import Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Let's Prep</title>
-
     <!-- <script src="./js/app.js"></script> -->
-
 </head>
 
 <body>
+
     
 
     <div class="hamburger">
@@ -33,6 +29,7 @@
             <div class="burger-line"></div>
             <!-- burger-line -->
         </div>
+
     <!-- Home Section -->
     <section class="scrollyspy" id="homeSection">
         <img id="tableTopp" src="./images/Chopped-Vegetables.jpg">
@@ -43,7 +40,7 @@
                     <h1 id="mainTitle">Let's Prep</h1>
                 </div>
                 <!-- Modal Trigger -->
-                <a class="waves-effect waves-light btn modal-trigger blue lighten-2" href="#modal1">Log In</a>
+                <a class="waves-effect waves-light btn modal-trigger blue lighten-2" href="/prep">Log In</a>
                 <!-- Modal Structure -->
                 <div id="modal1" class="modal">
                     <div class="modal-content">
@@ -57,17 +54,20 @@
                                 <input placeholder="Email" id="email" type="text" class="validate">
                                 <label for="email">Email</label>
                             </div>
+                            <div class="input-field">
+                                <input placeholder="Enter Number" id="calorieInput" type="text" class="validate">
+                                <label for="calorieInput">Calorie Input</label>
+                            </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect waves-teal btn-flat">Submit</a>
+                        <a href="/prep" id="btn" class="modal-close waves-effect waves-teal btn-flat">Submit</a>
                     </div>
                 </div>
             </div>
             <div class="col s2"></div>
         </div>
     </section>
-
     <!-- How it Works Section -->
     <section class="scrollyspy blue lighten-3" id="howSection">
         <div class="row center-align">
@@ -100,10 +100,9 @@
             <div class="col s3"></div>
         </div>
     </section>
-
     <section class="scrollyspy whySection center-align">
         <div class="row center-align">
-                <div class="col s3"></div>
+            <div class="col s3"></div>
             <h1 class="title col s6" id="whyTitle">Why Let's Prep?</h1>
             <div class="col s3"></div>
         </div>
@@ -120,7 +119,6 @@
             <div class="col s3"></div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="blue lighten-2 center-align footer" id="indexFooter">
         <p id="copyright"> COPYRIGHT &copy 2018 LET'S PREP. ALL RIGHTS RESERVED </p>
@@ -131,20 +129,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
 </body>
-
 <!-- Home page w/ log in -->
 
 </html>
-
-    <!-- Footer -->
-    <footer></footer>
-
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="./js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="./js/app.js"></script>
+<!-- Footer -->
+<footer></footer>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="./js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
 </body>
-
 <!-- Home page w/ log in -->
 
 </html>
