@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
+.navHamburger {
+  color: white;
+  position: sticky;
+  z-index: 1;
+  left: 3%;
+  top: 3%;
+}
+
 .footer {
     height: 90px;
     color: rgb(252, 238, 229);
@@ -22,10 +30,11 @@
 
 #tableTopp{
     width: 100%;
-    height: 906px;
+    height: 975px;
     position: absolute;
     z-index: 0;
     margin-bottom: 0px;
+    top: 0px;
 }
 
 #mainTitle {
@@ -140,6 +149,16 @@
     margin-top: 110px;
 }
 
+.whyPara {
+  margin-bottom: 40px;
+  width: 400px;
+  margin-left: 200px;
+}
+
+.whyHeaders {
+  font-weight: bold;
+}
+
 #indexFooter {
   margin-top: 0px;
 }
@@ -245,34 +264,9 @@
     z-index: 1;
   }
   
-  .first-week {
-    margin-bottom: 25px;
-    word-spacing: 55px;
-  }
-  
-  .second-week {
-    margin-bottom: 25px;
-    word-spacing: 53px;
-  }
-  
-  .third-week {
+  .week {
     margin-bottom: 25px;
     word-spacing: 58px;
-  }
-  
-  .fourth-week {
-    margin-bottom: 25px;
-    word-spacing: 58px;
-  }
-  
-  .fifth-week {
-    margin-bottom: 25px;
-    word-spacing: 56px;
-  }
-  
-  .sixth-week {
-    margin-bottom: 25px;
-    word-spacing: 55px;
   }
   
   .active-day {
@@ -282,7 +276,7 @@
     background-color: #64b5f6;
     position: relative;
     top: 145px;
-    left: 801px;
+    left: 825px;
   }
   
   .white {

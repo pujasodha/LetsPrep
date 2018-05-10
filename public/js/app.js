@@ -2,9 +2,10 @@
 
 $(document).ready(function () {
     M.AutoInit();
-    var user_input = $('#calorieInput').val()
-    var calories = Math.floor(user_input / 3)
-
+    $('.dropdown-trigger').dropdown();
+    $('.scrollspy').scrollSpy({
+        scrollOffset: 100,
+      });
     $('#userBtn').on('click', function () {
 
         var user = $("#name").val();
@@ -176,7 +177,5 @@ $(document).ready(function () {
 
     // $('.sidenav').sidenav();
     // $('.modal').modal();
-    // $('.scrollspy').scrollSpy({
-    //   scrollOffset: 100,
-    // })
+
     // $('select').material_select();
