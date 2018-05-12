@@ -126,10 +126,10 @@ module.exports = function (app) {
     //     })
 
         var calories = req.body.calories
-        var queryURL = "https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&calories=0-"+calories
+        var queryURL = "https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&to=30&calories=250-"+ calories + "&health=alcohol-free&time=25-30&ingr=5&diet=balanced&yield=1-4"
         
-        request("https://api.edamam.com/search?q=&app_id=" + app_id + "&app_key=" + app_key + "&calories=0-"+ calories, function(error, response, body){
-        //     console.log(queryURL)
+        request(queryURL, function(error, response, body){
+            console.log(queryURL)
         // console.log(response.body)
         // console.log(body)
         res.json(response.body)
