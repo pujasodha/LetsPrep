@@ -8,453 +8,521 @@
   left: 3%;
   top: 3%;
 }
+
 .footer {
-    height: 90px;
-    color: rgb(252, 238, 229);
-    bottom: 0px;
-    margin-top: 120px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  color: rgb(252, 238, 229);
 }
+
 #copyright {
   font-weight: bold;
   padding-top: 35px;
   margin-top: 0px;
 }
+
 #homeSection {
-    margin-bottom: 0px;
-    height: 906px;
+  margin-bottom: 0px;
+  height: 906px;
 }
-#tableTopp{
-    width: 100%;
-    height: 975px;
-    position: absolute;
-    z-index: 0;
-    margin-bottom: 0px;
-    top: 0px;
+
+#tableTopp {
+  width: 100%;
+  height: 975px;
+  position: absolute;
+  z-index: 0;
+  margin-bottom: 0px;
+  top: 0px;
 }
+
 #mainTitle {
-    font-family: 'Pacifico', cursive;
-    position: absolute;
-    top: 24%;
-    color: rgb(252, 238, 229);
-    font-size: 260px;
-    text-shadow: -6px 0 #64b5f6, 0 6px #64b5f6, 6px 0 #64b5f6, 0 -6px #64b5f6;
-    font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  top: 24%;
+  color: rgb(252, 238, 229);
+  font-size: 260px;
+  text-shadow: -6px 0 #64b5f6, 0 6px #64b5f6, 6px 0 #64b5f6, 0 -6px #64b5f6;
+  font-weight: bold;
 }
-.modal-trigger{
-    left: 45%;
-    top: 71.5%;
-    position: absolute;
-    height: 70px;
-    width: 200px;
-    z-index: 1;
-    border-radius: 15px;
-    font-size: 30px;
-    color: rgb(252, 238, 229);
-    padding-top: 17px;
-    font-weight: bold;
+
+.modal-trigger {
+  left: 45%;
+  top: 71.5%;
+  position: absolute;
+  height: 70px;
+  width: 200px;
+  z-index: 1;
+  border-radius: 15px;
+  font-size: 30px;
+  color: rgb(252, 238, 229);
+  padding-top: 17px;
+  font-weight: bold;
 }
+
 /* How Section */
+
 #howSection {
-    top: 1000px;
+  top: 1000px;
 }
+
 .title {
-    margin-top: 0px;
-    font-family: 'Amatic SC', cursive;
-    padding-top: 100px;
-    color: rgb(252, 238, 229);
-    font-weight: 900;
-    font-size: 150px;
-    border-bottom: solid 7px rgb(252, 238, 229);
+  margin-top: 0px;
+  font-family: 'Amatic SC', cursive;
+  padding-top: 100px;
+  color: rgb(252, 238, 229);
+  font-weight: 900;
+  font-size: 150px;
+  border-bottom: solid 7px rgb(252, 238, 229);
 }
+
 #howTitle {
-    width: 800px;
-    margin-top: 110px;
+  width: 800px;
+  margin-top: 110px;
 }
+
 .howPics {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
+
 .howDivs {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
+
 .howText {
-    position: absolute;
-    font-size: 40px;
-    color: rgb(252, 238, 229);
+  position: absolute;
+  font-size: 40px;
+  color: rgb(252, 238, 229);
 }
+
 #howText1 {
-    top: 1350px;
-    margin-left: 250px;
+  top: 1350px;
+  margin-left: 250px;
 }
+
 #howText2 {
-   left: 350px;
-   top: 1575px
+  left: 350px;
+  top: 1575px
 }
+
 #howText3 {
-    margin-left: 50px;
-    top: 1795px;
+  margin-left: 50px;
+  top: 1795px;
 }
+
 #howText4 {
-    top: 1840px;
-    margin-left: 210px;
+  top: 1840px;
+  margin-left: 210px;
 }
+
 #howText5 {
-    left: 450px;
-    top: 2025px;
+  left: 450px;
+  top: 2025px;
 }
+
 #howText6 {
-    left: 600px;
-    top: 2070px;
+  left: 600px;
+  top: 2070px;
 }
+
 .row {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
+
 #lastHowDiv {
-    margin-bottom: 120px;
+  margin-bottom: 120px;
 }
+
 /* Why Section */
+
 .whySection {
-    top: 1600px;
-    background-color:rgb(252, 238, 229);
-    height: 1000px;
-    margin-bottom: 0px;
+  top: 1600px;
+  background-color: rgb(252, 238, 229);
+  height: 1000px;
+  margin-bottom: 0px;
 }
+
 #whyTitle {
-    color: black;
-    border-bottom: solid 7px black;
-    width: 800px;
-    margin-top: 110px;
+  color: black;
+  border-bottom: solid 7px black;
+  width: 800px;
+  margin-top: 110px;
 }
+
 .whyPara {
   margin-bottom: 40px;
   width: 400px;
   margin-left: 200px;
 }
+
 .whyHeaders {
   font-weight: bold;
 }
+
 #indexFooter {
   margin-top: 0px;
 }
+
 /* User HTML */
+
 /* Calendar */
-.calendarDiv{
-    width: 50%; 
-    font-family: 'Kanit', sans-serif;
-    height: 500px;
-    margin-bottom: 100px;
+
+.calendarDiv {
+  width: 50%;
+  font-family: 'Kanit', sans-serif;
+  height: 500px;
+  margin-bottom: 100px;
 }
+
 .calendar-base {
-    width: 900px;
-    height: 500px;
-    border-radius: 20px;
-    background-color: white;
-    position: relative;
-    z-index: -1;
-    color: black;
-  }
-  
-  .year {
-    color: #E8E8E8;
-    font-size: 30px;
-    float: right;
-    position: relative;
-    right: 75px;
-    top: 20px;
-    font-weight: bold;
-  }
-  
-  .triangle-left {
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-right: 10px solid #E8E8E8;
-    border-bottom: 5px solid transparent;
-    float: right;
-    position: relative;
-    right: 90px;
-    top: 36px;
-  }
-  
-  .triangle-right {
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-left: 10px solid #E8E8E8;
-    border-bottom: 5px solid transparent;
-    float: right;
-    position: relative;
-    left: 20px;
-    top: 36px;
-  }
-  .triangle-left:hover{
-    border-right: 10px solid#64b5f6;
-  }
-  .triangle-right:hover{
-    border-left: 10px solid#64b5f6;
-  }
-  
-  .month-color {
-    color: #64b5f6;
-  }
-  .month-hover:hover{
-    color:#64b5f6 !important;
-  }
-  
-  .months {
-    color: #AAAAAA;
-    position: relative;
-    left: 350px;
-    top: 90px;
-    word-spacing: 10px;
-  }
-  
-  .month-line {
-    border-color: #E8E8E8;
-    position: relative;
-    top: 85px;
-    width: 57%;
-    left: 178px;
-  }
-  
-  
-  .days {
-    color: #AAAAAA;
-    position: relative;
-    font-size: 18px;
-    left: 355px;
-    top: 80px;
-    word-spacing: 35px;
-    font-weight: 600;
-  }
-  
-  .num-dates {
-    float: right;
-    position: relative;
-    top: 110px;
-    right: 50px;
-    z-index: 1;
-  }
-  
-  .week {
-    margin-bottom: 25px;
-    word-spacing: 58px;
-  }
-  
-  .active-day {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #64b5f6;
-    position: relative;
-    top: 145px;
-    left: 825px;
-  }
-  
-  .white {
-    color: white;
-  }
-  
-  .event-indicator {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #64b5f6;
-    position: relative;
-    top: 304px;
-    left: 695px;
-  }
-  
-  .two {
-    position: relative;
-    top: 168px;
-    left: 535px;
-  }
-  
-  .grey {
-    color: #AAAAB1;
-  }
-  
-  .calendar-left {
-    width: 300px;
-    height: 500px;
-    border-radius: 20px 0px 0px 20px;
-    background-color: #64b5f6;
-    position: relative;
-    z-index: -1;
-    bottom: 500px;
-    color: white;
-  }
-  
-  .hamburger {
-    position: relative;
-    top: 25px;
-    left: 25px;
-  }
-  
-  .burger-line:hover, .hamburger:hover{
-    background-color:#64b5f6 !important;
-  }
-  
-  .burger-line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 15%;
-    margin-bottom: 3px;
-  }
-  
-  .num-date {
-    font-size: 150px;
-    width: 50%;
-    margin: 0 auto;
-    font-weight: 700;
-  }
-  
-  .day {
-    width: 50%;
-    margin: 0px auto;
-    font-size: 30px;
-    position: relative;
-    bottom: 60px;
-  }
-  
-  .current-events {
-    font-size: 15px;
-    position: relative;
-    margin-left: 25px;
-    bottom: 30px;
-  }
-  
-  .posts {
-    text-decoration: underline dotted;
-  }
-  .posts:hover{
-    color:#27e879 !important;
-  }
-  
-  .create-event {
-    font-size: 18px;
-    position: relative;
-    margin-top: 30px;
-    margin-left: 25px;
-  }
-  
-  .event-line {
-    width: 90%;
-  }
-  
-  .add-event {
-    width: 20px;
-    height: 20px;
-    padding: 0px;
-    border-radius: 50%;
-    border: solid white 2px;
-    position: relative;
-    bottom: 42px;
-    left: 260px;
-  }
-  
-  .add {
-    font-size: 25px;
-    position: relative;
-    left: 4px;
-    bottom: 10px;
-  }
-  
-  .add:hover, .create-event:hover, .add-event:hover{
-    color:#64b5f6 !important;
-    border-color: #64b5f6 !important;
-  }
-  #profilePic {
-    height: 205px;
-    width: 265px;
-    margin-top: 20px;
-    background-color: whitesmoke;
-  }
-  #userRow {
-      margin-top: 90px;
-  }
-  #userName {
-      font-size: 40px;
-      margin-bottom: 20px;
-  }
-  #userDiv {
-    background-color: #64b5f6;
-    color: rgb(252, 238, 229);
-    height: 500px;
-    border-radius: 20px;
-    margin-right: 50px;
-  }
-  .bg {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: scroll;
-    height: 110%;
-    background-position: center;
-    opacity: .8;
-  }
- #goals {
-   margin-left: 30px;
-   margin-top: 0px;
- }
-  /* Landing Page */
- #landingTitle {
-   font-family: 'Amatic SC', cursive;
-   font-size: 100px;
-   font-weight: bolder;
-   background-color: white;
-   width: 534px;
-   padding-left: 48px;
-   padding-right: 10px;
- }
-  #resultsDiv {
-      width: 700px;
-      height: 700px;
-      margin-top: 180px;
-      left: 900px;
-      position: absolute;
-      top: 12%;
-      margin-bottom: 100px;
-  }
-  .landingForm {
-    background-color: white;
-    width: 550px;
-    height: 550px;
-    position: absolute;
-    padding: 25px;
-    margin-bottom: 245px;
-  }
-  #recipeDiv {
-    margin-left: 60px;
-    padding: 70px;
-    padding-top: 20px;
-    background-color: white;
-  }
-  #reciepesPic {
-    width: 400px;
-    height: 400px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
- .recipeText {
-    font-weight: bold;
-  }
-  #recipeName {
-    font-weight: bold;
-    font-size: 15px;
-  }
-  #recipeCardName {
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 10;
-  } 
-  #caloriesNumber {
-    font-weight: bold;
-    font-size:15px;
-  }
+  width: 900px;
+  height: 500px;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+  z-index: -1;
+  color: black;
+}
+
+.year {
+  color: #E8E8E8;
+  font-size: 30px;
+  float: right;
+  position: relative;
+  right: 75px;
+  top: 20px;
+  font-weight: bold;
+}
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #E8E8E8;
+  border-bottom: 5px solid transparent;
+  float: right;
+  position: relative;
+  right: 90px;
+  top: 36px;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #E8E8E8;
+  border-bottom: 5px solid transparent;
+  float: right;
+  position: relative;
+  left: 20px;
+  top: 36px;
+}
+
+.triangle-left:hover {
+  border-right: 10px solid#64b5f6;
+}
+
+.triangle-right:hover {
+  border-left: 10px solid#64b5f6;
+}
+
+.month-color {
+  color: #64b5f6;
+}
+
+.month-hover:hover {
+  color: #64b5f6 !important;
+}
+
+.months {
+  color: #AAAAAA;
+  position: relative;
+  left: 350px;
+  top: 90px;
+  word-spacing: 10px;
+}
+
+.month-line {
+  border-color: #E8E8E8;
+  position: relative;
+  top: 85px;
+  width: 57%;
+  left: 178px;
+}
+
+.days {
+  color: #AAAAAA;
+  position: relative;
+  font-size: 18px;
+  left: 355px;
+  top: 80px;
+  word-spacing: 35px;
+  font-weight: 600;
+}
+
+.num-dates {
+  float: right;
+  position: relative;
+  top: 110px;
+  right: 50px;
+  z-index: 1;
+}
+
+.week {
+  margin-bottom: 25px;
+  word-spacing: 58px;
+}
+
+.active-day {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #64b5f6;
+  position: relative;
+  top: 145px;
+  left: 825px;
+}
+
+.white {
+  color: white;
+}
+
+.event-indicator {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #64b5f6;
+  position: relative;
+  top: 304px;
+  left: 695px;
+}
+
+.two {
+  position: relative;
+  top: 168px;
+  left: 535px;
+}
+
+.grey {
+  color: #AAAAB1;
+}
+
+.calendar-left {
+  width: 300px;
+  height: 500px;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #64b5f6;
+  position: relative;
+  z-index: -1;
+  bottom: 500px;
+  color: white;
+}
+
+.hamburger {
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+.burger-line:hover,
+.hamburger:hover {
+  background-color: #64b5f6 !important;
+}
+
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 15%;
+  margin-bottom: 3px;
+}
+
+.num-date {
+  font-size: 150px;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.day {
+  width: 50%;
+  margin: 0px auto;
+  font-size: 30px;
+  position: relative;
+  bottom: 60px;
+}
+
+.current-events {
+  font-size: 15px;
+  position: relative;
+  margin-left: 25px;
+  bottom: 30px;
+}
+
+.posts {
+  text-decoration: underline dotted;
+}
+
+.posts:hover {
+  color: #27e879 !important;
+}
+
+.create-event {
+  font-size: 18px;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.event-line {
+  width: 90%;
+}
+
+.add-event {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  border-radius: 50%;
+  border: solid white 2px;
+  position: relative;
+  bottom: 42px;
+  left: 260px;
+}
+
+.add {
+  font-size: 25px;
+  position: relative;
+  left: 4px;
+  bottom: 10px;
+}
+
+.add:hover,
+.create-event:hover,
+.add-event:hover {
+  color: #64b5f6 !important;
+  border-color: #64b5f6 !important;
+}
+
+#profilePic {
+  height: 205px;
+  width: 265px;
+  margin-top: 20px;
+  background-color: whitesmoke;
+}
+
+#userRow {
+  margin-top: 90px;
+}
+
+#userName {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#userDiv {
+  background-color: #64b5f6;
+  color: rgb(252, 238, 229);
+  height: 500px;
+  border-radius: 20px;
+  margin-right: 50px;
+}
+
+.bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: scroll;
+  height: 110%;
+  background-position: center;
+  opacity: .8;
+}
+
+#goals {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
+/* Landing Page */
+
+#landingTitle {
+  font-family: 'Amatic SC', cursive;
+  font-size: 100px;
+  font-weight: bolder;
+  background-color: white;
+  width: 534px;
+  padding-left: 48px;
+  padding-right: 10px;
+}
+
+#resultsDiv {
+  height: auto;
+  margin-top: 180px;
+  left: 900px;
+  position: absolute;
+  top: 12%;
+  margin-bottom: 100px;
+  background-color: white;
+ 
+}
+
+.inputInfo{
+  background-color: white;
+  padding: 10px;
+
+}
+
+#userBtn {
+  background-color: rgb(244, 244, 107);
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.landingForm {
+  background-color: white;
+  width: 550px;
+  height: auto;
+  position: absolute;
+  padding-bottom: 25px;
+  margin-bottom: 245px;
+}
+
+#recipeDiv {
+  padding: 70px;
+  padding-top: 20px;
+  background-color: white;
+}
+
+#reciepesPic {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.recipeText {
+  font-weight: bold;
+}
+
+#recipeName {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#recipeCardName {
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 10;
+  padding-top: 10px;
+}
+
+#caloriesNumber {
+  font-weight: bold;
+  font-size: 15px;
+}
