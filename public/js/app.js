@@ -13,6 +13,8 @@ $(document).ready(function () {
 
         var user_input = $('#calorieInput').val()
 
+        var goals = $('#goals').val()
+
         var breakfast = "N/A"
         var lunch = "N/A"
         var dinner = "N/A"
@@ -36,6 +38,7 @@ $(document).ready(function () {
                 breakfast: breakfast,
                 lunch: lunch,
                 dinner: dinner,
+                goals: goals,
                 createdAt: {
                     type: 'TIMESTAMP',
                     allowNull: false
@@ -51,13 +54,26 @@ $(document).ready(function () {
              $("#email").val('');
     
              $('#calorieInput').val('')
+
+             $('#goals').val('')
             
             // API NOW WILL GET CALLED AFTER SUMBITTING INFO!!!
             $('#clientName').html(user)
             $('#caloriesNumber').html(user_input)   
+            $('#goalsWeek').append(goals)
             console.log('hello')
             // var user_input = $('#calorieInput').val()
             console.log(calories)
+            // $.ajax({
+            //     url: '/api/user',
+            //     method: "GET",
+            //     data: {
+            //         user: user,
+            //         goals: goals
+            //     }
+            // })
+            //     .then(function (response) {
+                    // $('#goalsWeek').append(goals)
             $.ajax({
                 url: '/api/edamam',
                 method: "POST",
@@ -186,6 +202,7 @@ $(document).ready(function () {
         })
     })
 })
+// })
 
             // $('#clientName').html(user)
             // $('#caloriesNumber').html(user_input)   
