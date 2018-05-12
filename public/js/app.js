@@ -6,7 +6,7 @@ $(document).ready(function () {
     var calories = Math.floor(user_input / 3)
 
     $('#userBtn').on('click', function () {
-       
+
         var user = $("#name").val();
 
         var email = $("#email").val();
@@ -27,7 +27,7 @@ $(document).ready(function () {
         console.log(calories)
         //  ======================= USER LOGIC =========================== //
 
-        
+
         $.ajax({
             url: '/api/user',
             method: "POST",
@@ -49,39 +49,39 @@ $(document).ready(function () {
                 }
             }
         }).then(function () {
-             $("#name").val('');
+            $("#name").val('');
 
-             $("#email").val('');
-    
-             $('#calorieInput').val('')
+            $("#email").val('');
 
-             $('#goals').val('')
-            
+            $('#calorieInput').val('')
+
+            $('#goals').val('')
+
             // API NOW WILL GET CALLED AFTER SUMBITTING INFO!!!
             $('#clientName').html(user)
-            $('#caloriesNumber').html(user_input)   
+            $('#caloriesNumber').html(user_input)
             $('#goalsWeek').append(goals)
             console.log('hello')
             // var user_input = $('#calorieInput').val()
             console.log(calories)
             // $.ajax({
             //     url: '/api/user',
-            //     method: "GET",
+            //     method: "POST",
             //     data: {
             //         user: user,
             //         goals: goals
             //     }
             // })
             //     .then(function (response) {
-                    // $('#goalsWeek').append(goals)
-            $.ajax({
-                url: '/api/edamam',
-                method: "POST",
-                data: {
-                    calories: calories
-                }
-            })
-                .then(function (response) {
+            //         console.log(response)
+            //         $('#goalsWeek').append(goals)
+                    $.ajax({
+                        url: '/api/edamam',
+                        method: "POST",
+                        data: {
+                            calories: calories
+                        }
+                }).then(function (response) {
                     console.log(JSON.parse(response))
                     var res = JSON.parse(response)
 
