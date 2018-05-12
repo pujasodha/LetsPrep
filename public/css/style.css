@@ -472,6 +472,10 @@
  
 }
 
+#clientName {
+  font-family:'Amatic SC', cursive;
+}
+
 .inputInfo{
   background-color: white;
   padding: 10px;
